@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+字符串的长度：
+    - length：使用length属性可以返回字符串的长度；
+
+查找字符串中的字符串:
+    - indexOF():方法返回字符串中制定文本首次出现的索引（位置）；
+    - lastIndexOF():方法返回指定文本在字符串中最后一次出现的索引；
+    - lastIndexOf() 方法向后进行检索（从尾到头），这意味着：假如第二个参数是 50，则从位置 50 开始检索，直到字符串的起点。
+    - 如果为找到文本，indexOf() 和 ；lastIndexOf()均返回-1，另外两种方法都接受作为检索起始位置的第二个参数
+
+检索字符串中的字符串：
+    - search()：方法搜索特定值的字符串，并返回匹配的位置。
+    - search() 方法无法设置第二个开始位置参数。
+
+提取部分字符串：
+    - slice(start,end)
+        - slice()提取字符串的某个部分并在新字符串中返回被提取的部分
+        - 该方法设置两个参数：起始索引的参数（start），和终止索引的参数（end），参数可以为负
+    - substring(start,end)
+        - substring（）类似于slice（）。不同之处在于substring（）无法接受负的索引
+    - substr(start,end)
+        - substr（）类似于slice（）。不同之处在于第二个参数规定被提取部分的长度
+
+替换字符串内容：
+    - replace（）方法用拎一个值替换在字符串中指定的值。
+    - replace（）方法不会改变调用它的字符串。它返回的是新字符串。默认的replace（）只替换首个匹配。
+    - replace（）对大小写敏感，如需执行大小写不敏感，请使用正则表格式。
+
+转换大写和小写：
+    toUpperCase()把字符串转换为大写
+    toLowerCase
+
+
+
+
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Javascript 字符串属性</h1>
+<p>length 属性返回字符串的长度：</p>
+<p id="demo"></p>
+
+<script>
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.getElementById("demo").innerHTML = txt.length;
+</script>
+</body>
+</html>
